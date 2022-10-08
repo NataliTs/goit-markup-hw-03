@@ -1,0 +1,213 @@
+/* колір заголовків #212121 */
+/* другорядний колір тексту #757575*/
+/* Білий #FFFFFF */
+/* акцент #2196F3 */
+/* лого чорний #000000 */
+/* основний колір фона  #F5F5F5; */
+/* колір шапки  #FFFFFF*/
+/* другорядний колір фона  #F5F4FA; */
+/*  */
+:root {
+  --title-text-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #f5f4fa;
+  --hero-background-color: #2f303a;
+  --header-background-color: #ffffff;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --button-activ-background-color: #188ce8;
+  --address-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--title-text-color);
+}
+.list {
+  list-style: none;
+}
+/* Header */
+.header {
+  background-color: var(--header-background-color);
+}
+/* Лого */
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  letter-spacing: 0.03em;
+}
+.header-logo {
+  color: var(--black-color);
+}
+.footer-logo {
+  color: var(--white-color);
+  text-decoration: none;
+}
+/* Site nav */
+.link {
+  text-decoration: none;
+}
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.site-nav .contact {
+  color: var(--text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--hero-background-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.button {
+  font-family: inherit;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--button-activ-background-color);
+}
+/* Section */
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.card {
+  background-color: var(--white-color);
+}
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team .job {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* Features */
+
+.features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features .text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+/* Footer */
+.footer {
+  background-color: var(--hero-background-color);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address .location {
+  color: var(--white-color);
+  text-decoration: none;
+}
+.address .link {
+  color: var(--address-color);
+  text-decoration: none;
+}
+.address .link:hover,
+.address .link:focus,
+.address .location:hover,
+.address .location:focus {
+  color: var(--accent-color);
+}
+
+/* Портфоліо */
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.card-group {
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
