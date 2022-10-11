@@ -78,6 +78,8 @@ body {
   line-height: 1.19;
   color: var(--accent-color);
   letter-spacing: 0.03em;
+}
+.header-nav .logo {
   margin-right: 93px;
 }
 .header-logo {
@@ -86,6 +88,10 @@ body {
 .footer-logo {
   color: var(--white-color);
   text-decoration: none;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
 }
 /* Site nav */
 .link {
@@ -153,6 +159,7 @@ body {
   margin: 0 auto;
   display: block;
   margin-top: 30px;
+  border: none;
 }
 .button:hover,
 .button:focus {
@@ -160,10 +167,14 @@ body {
 }
 /* Section */
 
-.section {
+.section,
+.portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.section-activity {
+  padding-top: 0;
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -204,9 +215,8 @@ body {
 
 /* Features */
 
-.section .features,
-.portfolio {
-  padding-top: 94px;
+.feature {
+  max-width: 270px;
 }
 
 .features .title {
@@ -249,7 +259,7 @@ body {
   gap: 30px;
 }
 .activity-item {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 /* Footer */
 .footer {
@@ -272,7 +282,6 @@ body {
   color: var(--address-color);
   text-decoration: none;
   display: inline-block;
-  margin-top: 9px;
 }
 .address .link:hover,
 .address .link:focus,
@@ -280,8 +289,9 @@ body {
 .address .location:focus {
   color: var(--accent-color);
 }
-.address .list {
-  margin-top: 20px;
+
+.list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 /* Портфоліо */
 .filter-button {
@@ -293,6 +303,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   padding: 6px 22px;
+  border: none;
 }
 .filter-button:hover,
 .filter-button:focus {
@@ -300,14 +311,14 @@ body {
   background-color: var(--accent-color);
 }
 .filters {
-  padding-bottom: 34px;
+  margin-bottom: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
 .card {
-  width: calc((100 %-60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 .card-title {
   font-weight: 700;
@@ -325,6 +336,7 @@ body {
 .card-about {
   /* outline: 2px solid red; */
   border: 1px solid var(--border-color);
+  border-top: none;
   padding: 20px 24px;
 }
 .portfolio-list {
